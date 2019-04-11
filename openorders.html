@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Coinvit</title>
+      <!-- Tell the browser to be responsive to screen width -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Bootstrap 3.3.7 -->
+      <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+      <!-- Ionicons -->
+      <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+      <!-- jvectormap -->
+      <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
+      <!-- Theme style -->
+      <link rel="stylesheet" href="dist/css/AdminLTE.css">
+      <!-- Fixed Column -->
+      <link rel="stylesheet" type="text/css" href="dist/css/column-fixed.css">
+      <!-- Scrollbar Custom -->
+      <link rel="stylesheet" type="text/css" href="dist/css/scrollbar-custom.css">
+      <!-- Menu Asset Header -->
+      <link rel="stylesheet" type="text/css" href="dist/css/menu-asset.css">
+      <!-- Custom Layout -->
+      <link rel="stylesheet" type="text/css" href="dist/css/custom-layout.css">
+      <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+      <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+      <!-- Google Font -->
+      <link rel="stylesheet"
+         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+   </head>
+   <!-- Body with maximize minimize sidebar left -->
+   <body class="hold-transition fixed">
+      <div class="wrapper">
+      <!-- Main Header end in line 200 -->
+      <header class="main-header">
+         <!-- Header menu(Markets, Centralize, Decentralize, Login/Register) -->
+         <nav class="collapse navbar-collapse navbar-color">
+            <ul class="nav navbar-nav navbar-right">
+               <li class="dropdown">
+                  <a class="dropdown-toggle text-white" data-toggle="dropdown" href="#">
+                  <i class="fa fa-th" style="font-size: 1.286em;"></i>
+                  </a>
+                  <ul class="dropdown-menu products-list product-list-in-box dominan">
+                     <li class="item">
+                        <a href="javascript:void(0)">
+                           <div class="product-img">
+                              <img src="dist/img/default-50x50.gif" alt="Product Image">
+                           </div>
+                           <div class="product-info">
+                              <span class="product-title">Exchange</span>
+                              <span class="product-description">
+                              Crypto Asset Exchange
+                              </span>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="item">
+                        <a href="javascript:void(0)">
+                           <div class="product-img">
+                              <img src="dist/img/default-50x50.gif" alt="Product Image">
+                           </div>
+                           <div class="product-info">
+                              <span class="product-title">Academy</span>
+                              <span class="product-description">
+                              Blockchain & Crypto
+                              </span>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="item">
+                        <a href="javascript:void(0)">
+                           <div class="product-img">
+                              <img src="dist/img/default-50x50.gif" alt="Product Image">
+                           </div>
+                           <div class="product-info">
+                              <span class="product-title">Education</span>
+                              <span class="product-description">
+                              Education Blockchain & Crypto
+                              </span>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="item">
+                        <a href="javascript:void(0)">
+                           <div class="product-img">
+                              <img src="dist/img/default-50x50.gif" alt="Product Image">
+                           </div>
+                           <div class="product-info">
+                              <span class="product-title">Crypto News</span>
+                              <span class="product-description">
+                              Self Publication News
+                              </span>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="item">
+                        <a href="javascript:void(0)">
+                           <div class="product-img">
+                              <img src="dist/img/default-50x50.gif" alt="Product Image">
+                           </div>
+                           <div class="product-info">
+                              <span class="product-title">PORTAL</span>
+                              <span class="product-description">
+                              Self Publication News
+                              </span>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="item">
+                        <a href="javascript:void(0)">
+                           <div class="product-img">
+                              <img src="dist/img/default-50x50.gif" alt="Product Image">
+                           </div>
+                           <div class="product-info">
+                              <span class="product-title">FORUM</span>
+                              <span class="product-description">
+                              Crypto ANN, Hangout
+                              </span>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="item">
+                        <a href="javascript:void(0)">
+                           <div class="product-img">
+                              <img src="dist/img/default-50x50.gif" alt="Product Image">
+                           </div>
+                           <div class="product-info">
+                              <span class="product-title">Marketing</span>
+                              <span class="product-description">
+                              Self Advertising Platform
+                              </span>
+                           </div>
+                        </a>
+                     </li>
+                  </ul>
+               </li>
+               <li><a href="index.html">Markets</a></li>
+               <li><a href="trade.html">Exchange</a></li>
+               <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="exchange.html">
+                  Centralize <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                     <li><a tabindex="-1" href="wallet-cex.html" class="text-black">Wallet</a></li>
+                     <li><a tabindex="-1" href="openorders.html" class="text-black">Orders</a></li>
+                     <li><a tabindex="-1" href="transfer-history.html" class="text-black">History</a></li>
+                  </ul>
+               </li>
+               <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="exchange.html">
+                  Decentralize <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                     <li><a tabindex="-1" href="wallet.html" class="text-black">Wallet</a></li>
+                     <li><a tabindex="-1" href="openorders.html" class="text-black">Orders</a></li>
+                     <li><a tabindex="-1" href="transfer-history.html" class="text-black">History</a></li>
+                  </ul>
+               </li>
+               <li>
+                  <a href="#">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Google_Translate_Icon.png" width="20" height="20">    
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                  <i class="fa fa-moon-o"></i>    
+                  </a>
+               </li>
+               <li>
+                  <a href="myactivity.html">
+                  <i class="glyphicon glyphicon-wrench"></i>    
+                  </a>
+               </li>
+               <li>
+                  <!-- Image Hover -->
+                  <!-- <img src="dist/img/button/btn-logout-hover.png" width="130px" height="35px" type="button">    -->
+                  <a href="index.html" style="padding: 0px;">
+                  <img src="dist/img/button/btn-logout.png" width="130px" height="35px" type="button">   
+                  </a>
+               </li>
+            </ul>
+         </nav>
+      </header>
+      <!-- End Header -->
+      <section>
+         <div class="box" style=" margin-top: 30px; ">
+            <div class="box-header hideline-asset" style="background-color: #273239;">
+               <div class="row">
+                  <div class="col-lg-3-ads col-md-3 col-sm-3">
+                     <img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20RESERVED.png" height="50%" width="100%" />
+                  </div>
+                  <!-- End col-lg-3 -->
+                  <div class="col-lg-3-ads col-md-3 col-sm-3">
+                     <img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20RESERVED.png" height="50%" width="100%" />
+                  </div>
+                  <!-- End col-lg-3 -->
+                  <div class="col-lg-3-ads col-md-3 col-sm-3">
+                     <img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20RESERVED.png" height="50%" width="100%" />
+                  </div>
+                  <!-- End col-lg-3 -->
+                  <div class="col-lg-3-ads col-md-3 col-sm-3">
+                     <img src="https://www.mystellar.org/GALLERYALBUM/Stellar/Banner%206%20-%20RESERVED.png" height="50%" width="100%" />
+                  </div>
+                  <!-- End col-lg-3 -->
+               </div>
+               <!-- End Row -->
+            </div>
+            <!-- /.box-header -->
+         </div>
+         <!-- End box -->
+         <div class="row" style="padding: 0 12% 0 12%;">
+            <div class="box">
+               <div class="box">
+                  <div class="box-body">
+                     <h3 class="text-left" style=" padding-left: 8px;">Open Order</h3>
+                     <!-- My Open Orders -->
+                     <table class="table table-hover" id="moo" width="100%" cellspacing="0">
+                        <thead class="head-column">
+                           <tr>
+                              <th>ORDER DATE</th>
+                              <th>TYPE</th>
+                              <th>AMOUNT</th>
+                              <th>PRICE</th>
+                              <th>MARKET</th>
+                              <th>FILLED</th>
+                              <th>UNIT TOTALS</th>
+                              <th>ACTUAL RATE</th>
+                              <th>COST</th>
+                              <th>ACTION</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>2018-08-12 12.00.33</td>
+                              <td class="text-red">Sell</td>
+                              <td>10.00000001 FRAS</td>
+                              <td>1.0000001 XLM</td>
+                              <td>FRAS-XLM</td>
+                              <td>7.00000001 FRAS</td>
+                              <td>7.00000001 XLM</td>
+                              <td>1.0000001 XLM</td>
+                              <td class="text-red">-0.0001 XLM</td>
+                              <td><a href="#" class="text-orange"><b>Cancel</b></a></td>
+                           </tr>
+                           <tr>
+                              <td>2018-08-12 12.00.33</td>
+                              <td class="text-green">Buy</td>
+                              <td>10.00000001 FRAS</td>
+                              <td>1.0000001 XLM</td>
+                              <td>FRAS-XLM</td>
+                              <td>7.00000001 FRAS</td>
+                              <td>7.00000001 XLM</td>
+                              <td>1.0000001 XLM</td>
+                              <td class="text-red">-0.0001 XLM</td>
+                              <td><a href="#" class="text-orange"><b>Cancel</b></a></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <!-- End Open Orders -->
+                     <h3 class="text-left" style=" margin-top: 40px; padding-left: 8px;">Your Trading History</h3>
+                     <!-- My Open Orders -->
+                     <table class="table table-hover" id="ro" width="100%" cellspacing="0">
+                        <thead class="head-column">
+                           <tr>
+                              <th>OPENED DATE</th>
+                              <th>CLOSED DATE</th>
+                              <th>TYPE</th>
+                              <th>FILLED AMOUNT</th>
+                              <th>MARKET</th>
+                              <th>ACTUAL PRICE</th>
+                              <th>TOTAL</th>
+                              <th>COST/PROCEEDS</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>2018-08-12 12.00.33</td>
+                              <td>2018-08-13 10.00.33</td>
+                              <td class="text-red">Sell</td>
+                              <td>10.00000001 FRAS</td>
+                              <td>FRAS-XLM</td>
+                              <td>1.0000001 XLM</td>
+                              <td>7.00000001 XLM</td>
+                              <td class="text-red">-0.0001 XLM</td>
+                           </tr>
+                           <tr>
+                              <td>2018-08-12 12.00.33</td>
+                              <td>2018-08-13 10.00.33</td>
+                              <td class="text-green">Buy</td>
+                              <td>10.00000001 FRAS</td>
+                              <td>FRAS-XLM</td>
+                              <td>1.0000001 XLM</td>
+                              <td>7.00000001 XLM</td>
+                              <td class="text-red">-0.0001 XLM</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <!-- End box-body -->
+               </div>
+               <!-- End Box -->
+            </div>
+            <!-- End Box -->
+         </div>
+      </section>
+     
+      <!-- Footer -->
+      <footer class="main-footer" style="margin-left: 0;">
+         <div class="row" style="margin-right: 80px; margin-left: 80px;">
+               <div class="col-md-3 col-sm-3 col-xs-3">
+                  <p class="font-16">ABOUT COINVIT</p>
+                  <p class="font-12"><a href="https://t.me/FRASINDO">Contact Us</a>
+                  </h4>
+                  <p class="font-12"><a href="#">Privacy Policy</a></p>
+                  <p class="font-12"><a href="#">Terms of Use</a></p>
+               </div>
+               <div class="col-md-3 col-sm-3 col-xs-3">
+                  <p class="font-16">SUPPORT</p>
+                  <p class="font-12"><a href="contact-us.html">++ Contact Support ++</a></p>
+                  <p class="font-12"><a href="contact-support.html">Guides</a></p>
+                  <p class="font-12"><a href="#">++ SUBMIT A TOKEN ++</a></p>
+                  <p class="font-12"><a href="#">REPORT Abuse</a></p>
+                  <p class="font-12"><a href="#">API Documentation</a></p>
+               </div>
+               <div class="col-md-3 col-sm-3 col-xs-3">
+                  <p class="font-16">NEWS</p>
+                  <p class="font-12"><a href="http://www.frasindo.com/media/">Press Release</a></p>
+                  <p class="font-12"><a href="https://twitter.com/frascoin">Follow us on Twitter</a></p>
+               </div>
+               <div class="col-md-3 col-sm-3 col-xs-3 text-center">
+                  <button type="button" class="btn btn-warning btn-lg btn-block font-for-head" style="margin-top: 20px;"><b>Self Advertise</b></button>
+                  <label>
+                  <a href="https://t.me/FRASINDO">
+                  <i class="fa fa-telegram logo-socmed"></i>
+                  </a>
+                  </label>
+                  <label>
+                  <a href="https://www.facebook.com/frasindo/">
+                  <i class="fa fa-facebook-square logo-socmed"></i>
+                  </a>
+                  </label>
+                  <label>
+                  <a href="https://twitter.com/frascoin">
+                  <i class="fa fa-twitter logo-socmed"></i>   
+                  </a>
+                  </label>
+                  <label>
+                  <a href="">
+                  <i class="fa fa-reddit logo-socmed"></i>
+                  </a>
+                  </label>
+                  <label>
+                  <a href="">
+                  <i class="fa fa-medium logo-socmed"></i>
+                  </a>
+                  </label>
+                  <label>
+                  <a href="">
+                  <i class="fa fa-instagram logo-socmed"></i>
+                  </a>              
+                  </label>
+               </div>
+               <div class="col-md-3 col-sm-3 col-xs-3">
+               </div>
+         </div>
+      </footer>
+      <!-- End Footer -->
+      <!-- Modal popup for generate key(Decentralize) and register/login(Centralize) -->
+      <div class="modal fade" id="modal-lr">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <div class="nav-tabs-custom">
+                     <ul class="nav nav-tabs">
+                        <li class="active"><a href="#decentralize" data-toggle="tab">Decentralize</a></li>
+                        <li><a href="#centralize" data-toggle="tab">Centralize</a></li>
+                        <li class="pull-right">
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                           </button>
+                        </li>
+                     </ul>
+                     <div class="tab-content">
+                        <div class="tab-pane active" id="decentralize">
+                           <form action="../../index.html" method="post">
+                              <div class="form-group">
+                                 <label for="sel1">Select Blockchain Network</label>
+                                 <select class="form-control" id="sel1">
+                                    <option>Stellar</option>
+                                    <option>Bitcoin</option>
+                                    <option>Ardor</option>
+                                    <option>Ethereum</option>
+                                 </select>
+                              </div>
+                              <div class="form-group has-feedback">
+                                 <label>Your Secret Key</label>
+                                 <input type="text" class="form-control" placeholder="Your secret key">
+                                 <span class="fa fa-key form-control-feedback"></span>
+                              </div>
+                              <div class="row">
+                                 <div class="col-xs-12">
+                                    <button type="submit" class="btn btn-default btn-block" style="padding: 8px; margin-bottom: 10px; margin-top: 8px; font-size: 17px;">Login</button>
+                                    <span class="text-center">Don't have a wallet?<a href="choosen_network.html" data-dismiss="modal" id="link_netmodal"> Click here to GENERATE NEW WALLET</a></span>
+                                 </div>
+                                 <!-- /.col -->
+                              </div>
+                           </form>
+                        </div>
+                        <div class="tab-pane" id="centralize">
+                           <div class="register-box">
+                              <div class="register-box-body" id="register_form">
+                                 <form action="../../index.html" method="post">
+                                    <div class="form-group has-feedback">
+                                       <label>Email address</label>
+                                       <input type="text" class="form-control" placeholder="Your email address">
+                                       <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                       <label>Password</label>
+                                       <input type="password" class="form-control" placeholder="Password">
+                                       <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                       <label>Confirm Password</label>
+                                       <input type="password" class="form-control" placeholder="Retype password">
+                                       <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-xs-12">
+                                          <div class="checkbox icheck text-center">
+                                             <label>
+                                             <input type="checkbox"> I agree to the <a href="#">Mystellar.org</a> Terms of Service
+                                             </label>
+                                          </div>
+                                          <p style="font-size: 12px; text-align: justify; margin-top: 8px; margin-bottom: 35px;">
+                                             We are committed to complying with all U.S. regulations that help prevent, detect and remediate unlawful behavior by customers and virtual currency developers when using the Bittrex trading platform or any of the company’s other services. 
+                                             Bittrex is not a regulated exchange under U.S. securities laws. More information can be found here . 
+                                          </p>
+                                       </div>
+                                       <!-- col-xs-12 -->
+                                    </div>
+                                    <!-- /.col -->
+                                 </form>
+                              </div>
+                              <!-- /.form-box -->
+                              <!-- form-box Form Login Centralize -->
+                              <div class="register-box-body" id="login_form">
+                                 <form action="../../index.html" method="post">
+                                    <div class="form-group has-feedback">
+                                       <label>Email address</label>
+                                       <input type="text" class="form-control" placeholder="Your email address">
+                                       <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                       <label>Password</label>
+                                       <input type="password" class="form-control" placeholder="Password">
+                                       <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-xs-12">
+                                          <div class="checkbox">
+                                             <label>
+                                             <input type="checkbox">Remember me 
+                                             </label>
+                                             <label style="float: right;">
+                                             <a href="#" class="text-right"> Forgot password ?</a>
+                                             </label>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!-- /.col -->
+                                 </form>
+                              </div>
+                              <!-- /.form-box Form Login Centralize-->
+                              <button type="submit" class="btn btn-default btn-block" style="padding: 8px; font-size: 17px;" id="register_btn">Register</button>
+                              <h5 class="text-center">Or</h5>
+                              <button type="submit" class="btn btn-default btn-block" style="padding: 8px; font-size: 17px;" id="login_btn">Login</button>
+                           </div>
+                        </div>
+                        <!-- /.tab-pane -->
+                     </div>
+                     <!-- /.tab-content -->
+                  </div>
+                  <!-- nav-tabs-custom -->
+               </div>
+            </div>
+            <!-- /.modal-content -->
+         </div>
+         <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+      <!-- Modal popup for choose blockchain network -->
+      <div class="modal fade" id="modal-new-wallet">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <h2 class="text-left">Please choose your Blockchain</h2>
+                  <div class="register-box">
+                     <div class="form-group has-feedback">
+                        <img src="https://www.frasindo.com/shop/_upload/Logo_SHOP_-_Stellar.jpg" alt="STELLAR Lumens (XLM)" width="350" height="200">
+                     </div>
+                     <div class="form-group has-feedback">
+                        <img src="https://www.frasindo.com/shop/_upload/Logo_SHOP_-_ARDOR_IGNIS.jpg" alt="ARDOR &amp; IGNIS" width="350" height="200">
+                     </div>
+                     <div class="form-group has-feedback">
+                        <img src="https://www.frasindo.com/shop/_upload/Logo_SHOP_-_Ethereum.jpg" alt="Ethereum" width="350" height="200">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- /.modal-content -->
+         </div>
+         <!-- /.modal-dialog -->
+      </div>
+      <!-- /.Modal popup for choose blockchain network -->
+   </body>
+   <!-- jQuery 3 -->
+   <script src="bower_components/jquery/dist/jquery.min.js"></script>
+   <!-- Bootstrap 3.3.7 -->
+   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+   <!-- DataTables -->
+   <script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+   <script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+   <!-- AdminLTE App -->
+   <script src="dist/js/adminlte.min.js"></script>
+   <!-- Dropdown Hover -->
+   <script src="dist/js/dropdown-hover.js"></script>
+   <!-- SlimScroll Vertical-->
+   <script src="bower_components/jquery-slimscroll/vertical/jquery.slimscroll.min.js"></script>
+   <!-- Pagination Setup Trade -->
+   <script src="dist/js/pagination-trade.js"></script>
+   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+   <script src="dist/js/pages/dashboard2.js"></script>
+   <!-- AdminLTE for demo purposes -->
+   <script src="dist/js/demo.js"></script>
+</html>
+
