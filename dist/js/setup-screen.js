@@ -9,10 +9,18 @@ setTimeout(function(){
     $('.back-margin-left').css('margin-left', '0px');
     $('.logo-icon').css('margin-left', '0px');
     $('#s-h').text('HIDE');
-            if ($(window).innerWidth() <= 996) {
+            if ($(window).innerWidth() <= 767) {
                $('.hide-max').css('display', 'none');
-               $('.col-lg-11').css('width', '95%');
+               $('.col-lg-11').css('width', '94%');
                $('.col-lg-1').css('width', '2%');  
+
+               $('.col-xs-2').css('width', '16%');
+               $('.col-xs-3-custom').css('width', '20%');
+            }   
+            else if ($(window).innerWidth() <= 996) {
+               $('.hide-max').css('display', 'none');
+               $('.col-lg-11').css('width', '96.5%');
+               $('.col-lg-1').css('width', '0%');  
 
                $('.col-sm-2').css('width', '15%');  
             }   
@@ -20,7 +28,7 @@ setTimeout(function(){
 
             else if ($(window).innerWidth() <= 1024) {
                $('.col-lg-11').css('width', '78%');
-               $('.col-lg-1').css('width', '19%');  
+               $('.col-lg-1').css('width', '19%'); 
             }   
             
             else if ($(window).innerWidth() <= 1360) {
@@ -32,9 +40,6 @@ setTimeout(function(){
                $('.col-lg-1').css('width', '16.5%');  
             }     
 
-  $('#asset').slimScroll({
-     height: 'calc(100vh - 240px)'
-   });
 }, 2000);// 5 detik
 
 $("#icon-setup").click(function(e) {

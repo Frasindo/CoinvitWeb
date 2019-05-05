@@ -19,13 +19,25 @@ $('#coin-slider').slimscroll({
   axis: 'x'
 });
 // Asset scroll setup
-$('#asset').slimScroll({
-  color: '#d2d6de',
-  railOpacity: 0.3,
-  width: '100%',
-  wheelStep : 100,
-  height: 'calc(100vh - 325px)'
-});
+ if ($(window).innerWidth() <= 767) {
+     $('#asset').slimScroll({
+      color: '#d2d6de',
+      railOpacity: 0.3,
+      width: '100%',
+      wheelStep : 300,
+      height: 'calc(100vh - 210px)'
+    });
+
+  }   
+  else if ($(window).innerWidth() <= 7680) {
+     $('#asset').slimScroll({
+      color: '#d2d6de',
+      railOpacity: 0.3,
+      width: '100%',
+      wheelStep : 300,
+      height: 'calc(100vh - 240px)'
+    });
+  }     
 
 $('#p_key').slimScroll({
   color: '#d2d6de',

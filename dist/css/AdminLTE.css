@@ -555,7 +555,9 @@ a:focus {
 /*
  * Component: Sidebar Mini
  */
-@media (min-width: 768px) {
+
+ /*Diubah*/
+@media (min-width: 481px) {
   .sidebar-mini.sidebar-collapse .content-wrapper,
   .sidebar-mini.sidebar-collapse .right-side,
   .sidebar-mini.sidebar-collapse .main-footer {

@@ -7,8 +7,97 @@
  
 }
 
-/*Tablet View 477 - 767 pixels chat hidden*/
-@media (min-width: 480px) and (max-width: 996px){
+/*Low FResolution Tablet View 481-767 pixels chat hidden*/
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  .col-sm-4{
+    padding-right: 0px;
+  }
+  .col-sm-5 {
+    width: 40.66666667%;
+  }
+  .img-logo-asset-exchange{
+    width: 50%;
+    height: auto;
+  }
+
+  .hideline-asset {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .space-upper{
+    margin-top: 20px;
+    width: 100%;
+    margin-right: 8px; 
+    margin-left: 8px;
+  }
+  navbar-nav > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.750em;
+  }
+  .dropdown-menu {
+    width: 100%;
+    padding: 5px;
+  }
+
+  /*Custom navbar.less*/
+  .collapse.navbar-collapse.navbar-color {
+    display: block;
+  }
+   .navbar-nav > li {
+    float: left;
+  }
+  .navbar-nav > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    padding-left: 0;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+  .navbar-right {
+    float: right !important;
+    margin-right: -15px;
+  }
+  .chat-btn{
+    margin-top: -32px;margin-right: 75px;background-color: #fc0909; display: block;
+  }
+
+  .img-logo-asset {
+    margin: 5px 3px 5px 3px;
+    width: 50%;
+    height: 50%;
+  } 
+  .user-panel{
+    margin-top: -20px;
+  }
+  .description-block > .description-header {
+    font-size: 0.750em;
+  }
+
+  .description-block > .description-text {
+     font-size: 0.625em;
+  }
+  .custom-nav {
+    margin: 0px -15px;
+  }
+
+  .col-xs-3{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .for-twentyfive {
+    font-size: 0.875em;
+  }
+  .name-asset {
+    font-size: 1.750em;
+  }
+}
+/*Tablet View 767-996 pixels chat hidden*/
+@media (min-width: 767px) and (max-width: 996px){
   .chat-btn{
     margin-top: -32px;margin-right: 1px;background-color: #fc0909; display: block;
   }
@@ -39,6 +128,44 @@
     margin-right: 8px; 
     margin-left: 8px;
   }
+
+  /*Custom navbar.less*/
+  .collapse.navbar-collapse.navbar-color {
+    display: block;
+  }
+  .navbar-nav > li {
+    float: left;
+  }
+  .navbar-right {
+    float: right !important;
+    margin-right: -15px;
+  }
+  .drop-menu{
+    display: none;
+  }
+
+  .img-logo-asset {
+      margin: 5px 3px 5px 3px;
+      width: 80%;
+      height: 80%;
+  }
+
+  .description-block > .description-header {
+    font-size: 1.000em;
+  }
+
+  .description-block > .description-text {
+     font-size: 0.875em;
+  }
+
+  .font-tablet-14{
+    font-size: 0.875em;
+  }
+
+  .tablet-padding{
+    padding: 0;
+  }
+
 }
 
 /* Tablet View 996 - 1024 pixels chat normai*/
@@ -72,6 +199,23 @@
    padding-left: 12%; 
    padding-right: 12%;
   }
+  .drop-menu{
+    display: none;
+  }
+
+  .img-logo-asset {
+      margin: 5px 3px 5px 3px;
+      width: 80%;
+      height: 80%;
+  }
+  .description-block > .description-header {
+    font-size: 1.000em;
+  }
+
+  .description-block > .description-text {
+     font-size: 0.875em;
+  }
+
 }
 /*Dekstop View 1025 - 8k pixels*/
 @media (min-width: 1025px) and (max-width: 7680px){
@@ -105,6 +249,22 @@
     margin-right: 8px; 
     margin-left: 8px;
   }
+  .drop-menu{
+    display: none;
+  }
+
+  .img-logo-asset {
+      margin: 5px 3px 5px 3px;
+      width: 80%;
+      height: 80%;
+  }
+  .description-block > .description-header {
+    font-size: 1.000em;
+  }
+
+  .description-block > .description-text {
+     font-size: 0.875em;
+  }
 }
 
 
@@ -113,7 +273,9 @@ body{
    overflow-x: scroll;
 }
 
-
+.margin-right-5{
+  margin-right: 5px;
+}
 /*Landing Page*/
   .name-asset{
     font-size: 40px;
@@ -142,7 +304,7 @@ body{
 .header-asset-panel{
     margin-bottom: -15px;
     margin-top: -15px;
-  }
+}
 .space-trade{
   margin-left: -25px;
   margin-right: -25px;
@@ -319,6 +481,11 @@ body{
    height: 80px;
    margin-top: -15px;
 }
+.logo-coinvit {
+    margin-top: 5px;
+    width: 80%;
+    height: auto;
+}
 .box-body.higt-asset{
   background-color: #d92b60; color: #fff;
 }
@@ -327,11 +494,6 @@ body{
    color: #777;
    margin: 0 0 0 0;
    padding: 5px 8px 15px 8px;
-}
-
-.navbar-nav>li>a {
-  padding-top: 10px; 
-  padding-bottom: 10px; 
 }
 
 .jumbotron {
@@ -377,11 +539,7 @@ margin: 1px 0 1px 0;
   width: 100%;
 }
 
-.logo-coinvit{
-  margin-top: 5px;
-  width: 80%;
-  height: auto;
-}
+
 .font-for-desc{
   font-size: 0.750em;
 }
@@ -391,13 +549,7 @@ margin: 1px 0 1px 0;
 .box-header > .fa, .box-header > .glyphicon, .box-header > .ion, .box-header .box-title {
    font-size: 1.125em;
 }
-.description-block > .description-header {
-  font-size: 1.000em;
-}
 
-.description-block > .description-text {
-   font-size: 0.875em;
-}
 h3{
   font-size: 1.714em;
 }
@@ -436,12 +588,6 @@ h3{
     border-radius: 50%;
     border: 2px solid #0084D4;
     font-size: 1.25em;
-}
-
-.img-logo-asset {
-    margin: 5px 3px 5px 3px;
-    width: 80%;
-    height: 80%;
 }
 
 .messages{

@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html>
    <head>
@@ -34,6 +33,18 @@
       -moz-transform: scale(1.5); /* FF */
       -webkit-transform: scale(1.5); /* Safari and Chrome */
       -o-transform: scale(1.5); /* Opera */
+      }
+      .mt10 {
+      margin-top: 10px !important;
+      }
+      .nopadding {
+      padding: 0;
+      }
+      .padding-left-15{
+      padding-left: 15px;
+      }
+      .form-horizontal .control-label {
+      text-align: left;
       }
    </style>
    <body>
@@ -185,7 +196,7 @@
                <li>
                   <!-- Image Hover -->
                   <!-- <img src="dist/img/button/btn-login-register-hover.png" width="130px" height="35px" type="button"  data-toggle="modal" data-target="#modal-lr"> -->
-                  <img src="dist/img/button/btn-login-register.png" width="130px" height="35px" type="button"  data-toggle="modal" data-target="#modal-lr">
+                  <img src="dist/img/button/btn-login-register.png" width="130" height="35" type="button"  data-toggle="modal" data-target="#modal-lr">
                </li>
             </ul>
          </nav>
@@ -217,7 +228,7 @@
             <!-- /.box-header -->
          </div>
          <!-- End box -->
-         <div class="container text-center">
+         <div class="container text-center tablet-padding">
          <section style="margin-bottom: 30px;">
             <div class="callout" style="margin-bottom: 0!important; background-color: #ffeeb6; border-left: #ffeeb6; padding-top: 1px;padding-bottom: 1px;">
                <h1>DECENTRALIZE (DEX)</h1>
@@ -294,15 +305,15 @@
                            <table class="table table-bordered table-striped table-markets-large dataTable" role="grid">
                               <thead>
                                  <tr role="row">
-                                    <th class="sorting text-center"style="width: 100px;" width="7%"></th>
-                                    <th class="sorting text-center"style="width: 100px;" width="7%">Code</th>
-                                    <th class="sorting text-center"style="width: 150px;" width="13%">Asset Name</th>
-                                    <th class="sorting text-center"style="width: 237px;">Total Balance</th>
-                                    <th class="sorting text-center"style="width: 424px;">On Orders</th>
-                                    <th class="sorting text-center"style="width: 424px;">USD Value</th>
-                                    <th class="sorting text-center"style="width: 424px;">BTC Value</th>
-                                    <th class="sorting text-center"style="width: 256px;" width="21%">Actions</th>
-                                    <th class="sorting text-center"style="width: 256px;" width="21%">Markets</th>
+                                    <th class="sorting text-center"></th>
+                                    <th class="sorting text-center">Code</th>
+                                    <th class="sorting text-center">Asset Name</th>
+                                    <th class="sorting text-center">Total Balance</th>
+                                    <th class="sorting text-center">On Orders</th>
+                                    <th class="sorting text-center">USD Value</th>
+                                    <th class="sorting text-center">BTC Value</th>
+                                    <th class="sorting text-center">Actions</th>
+                                    <th class="sorting text-center">Markets</th>
                                  </tr>
                               </thead>
                               <tbody>
@@ -326,44 +337,117 @@
                                  </tr>
                                  <tr>
                                     <td colspan="10" class="hide-deposit-tab" id="deposit-tabs">
-                                       
                                        <div class="nav-tabs-custom" style="margin-top: 5px;">
                                           <ul class="nav nav-tabs">
-                                            <li class="active"><a href="#tab_1" data-toggle="tab" aria-expanded="true">Send</a></li>
-                                            <li class=""><a href="#tab_2" data-toggle="tab" aria-expanded="false">Accept</a></li>
+                                             <li class="active"><a href="#deposit" data-toggle="tab" aria-expanded="true">Deposit/Receive</a></li>
+                                             <li class=""><a href="#history" data-toggle="tab" aria-expanded="false">History</a></li>
                                           </ul>
                                           <div class="tab-content text-left" style="background-color: #fff;">
-                                            <div class="tab-pane active" id="tab_1">
-                                              <p>Please send The Abyss to the address below</p>
-
-                                             <div class="form-group ml10 row" style="padding-left: 15px; padding-right: 15px; margin-top: 10px;">
-                                                <label class="col-sm-2 control-label nopadding mt10">Address :</label>
-                                                <div class="col-sm-7" style="line-height: 10px; padding-bottom: 5px;">
-                                                   <input type="text" name="name" value="" id="name" class="form-control" readonly="readonly">
+                                             <div class="tab-pane" id="history">
+                                                <p>Please send The FRAS to the address below</p>
+                                                <div class="form-group ml10 row" style="padding-left: 15px; padding-right: 15px; margin-top: 10px;">
+                                                   <label class="col-sm-2 control-label mt10">Address :</label>
+                                                   <div class="col-sm-7" style="line-height: 10px; padding-bottom: 5px;">
+                                                      <input type="text" name="name" id="name" class="form-control" readonly="readonly" value="0juihjkkbjbjbjjb">
+                                                   </div>
+                                                   <div class="col-sm-3 control-label mt10 red"></div>
                                                 </div>
-                                                <div class="col-sm-3 control-label nopadding mt10 red"></div>
+                                                <ul>
+                                                   <li>
+                                                      The above address is your wallet address, that you are already linked on your own <a href="myprofile.html" class="text-orange">user profile</a>.
+                                                   </li>
+                                                   <li>
+                                                      The deposit will enter after few confirmations.
+                                                   </li>
+                                                   <li>
+                                                      The FRAS deposit is free.
+                                                   </li>
+                                                </ul>
                                              </div>
-
-                                                <p>
-                                                   The above address is specific to you, and can be used repeatedly.
-                                                </p>
-                                                <p>
-                                                   The deposit will enter after 50 confirmations.
-                                                </p>
-                                                <p>
-                                                   The ABYSS deposit is free.
-                                                </p>
-                                            </div>
-                                            <!-- /.tab-pane -->
-                                            <div class="tab-pane" id="tab_2">
-                                              The European languages are members of the same family. Their separate existence is a myth.
-                                              For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ
-                                              in their grammar, their pronunciation and their most common words. Everyone realizes why a
-                                              new common language would be desirable: one could refuse to pay expensive translators. To
-                                              achieve this, it would be necessary to have uniform grammar, pronunciation and more common
-                                              words. If several languages coalesce, the grammar of the resulting language is more simple
-                                              and regular than that of the individual languages.
-                                            </div>
+                                             <!-- /.tab-pane -->
+                                             <div class="tab-pane active" id="deposit">
+                                                <div class="row">
+                                                   <div class="col-md-6">
+                                                      <form class="form-horizontal">
+                                                         <div class="box-body">
+                                                            <div class="form-group">
+                                                               <label class="col-sm-4 control-label padding-left-15">BTC Amount:</label>
+                                                               <div class="col-sm-8">
+                                                                  <div class="input-group">
+                                                                     <input type="text" name="withdraw_amount_btc" class="form-control btc_formatter" placeholder="BTC Shipping Amount Before Costs" id="withdraw_amount_btc">
+                                                                     <span class="input-group-btn">
+                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                                                                        <i class="fa fa-caret-left"></i>
+                                                                        </button>
+                                                                        <ul class="dropdown-menu amount-percent" role="menu">
+                                                                           <li><a href="#" onclick="$('#withdraw_amount_btc').val(btc_format(balance_btc*0.1)).change(); return false;">10%</a></li>
+                                                                           <li><a href="#" onclick="$('#withdraw_amount_btc').val(btc_format(balance_btc*0.25)).change(); return false;">25%</a></li>
+                                                                           <li><a href="#" onclick="$('#withdraw_amount_btc').val(btc_format(balance_btc*0.5)).change(); return false;">50%</a></li>
+                                                                           <li><a href="#" onclick="$('#withdraw_amount_btc').val(btc_format(balance_btc*0.75)).change(); return false;">75%</a></li>
+                                                                           <li><a href="#" onclick="$('#withdraw_amount_btc').val(btc_format(balance_btc)).change(); return false;">100%</a></li>
+                                                                        </ul>
+                                                                     </span>
+                                                                  </div>
+                                                               </div>
+                                                               <!-- End col-sm-8 -->
+                                                            </div>
+                                                            <!-- End form-group -->
+                                                            <div class="form-group">
+                                                               <label class="col-sm-4 control-label">Net Receive:</label>
+                                                               <div class="col-sm-8">
+                                                                  <input type="text" class="form-control" placeholder="Net BTC Amount to be Received">
+                                                               </div>
+                                                               <!-- End col-sm-8 -->
+                                                            </div>
+                                                            <!-- End form-group -->
+                                                            <div class="form-group">
+                                                               <label class="col-sm-4 control-label">Bitcoin Address:</label>
+                                                               <div class="col-sm-8">
+                                                                  <input type="text" class="form-control" placeholder="Adress">
+                                                               </div>
+                                                            </div>
+                                                            <!-- End form-group -->
+                                                            <div class="form-group">
+                                                               <label class="col-sm-4 control-label">Secret Key:</label>
+                                                               <div class="col-sm-8">
+                                                                  <input type="text" class="form-control" placeholder="Secret Key">
+                                                               </div>
+                                                               <!-- End col-sm-8 -->
+                                                            </div>
+                                                            <!-- End form-group -->
+                                                            <div class="form-group">
+                                                               <div class="col-sm-12 text-center">
+                                                                  <button class="btn btn-primary btn-block">Send</button>
+                                                               </div>
+                                                            </div>
+                                                            <!-- End form-group -->
+                                                         </div>
+                                                         <!-- /.box-body -->
+                                                      </form>
+                                                      <!-- End form -->
+                                                   </div>
+                                                   <!-- End col-md-6 -->
+                                                   <div class="col-md-6">
+                                                      <div class="alert alert-warning">
+                                                         <strong>Warning!</strong> Check the Bitcoin address carefully.
+                                                      </div>
+                                                      <ul class="list-desc">
+                                                         <li>Minimum shipping is 0.001 BTC.</li>
+                                                         <li>Maximum shipping of 3 BTC per day (
+                                                            to increase the limit,<a href="https://indodax.com/edit_limit" class="underline text-orange">click here</a>
+                                                            ).
+                                                         </li>
+                                                         <li>Charges of 0,0005 BTC are deducted from the shipping amount.</li>
+                                                         <li>BTC will enter your wallet in 60 minutes.</li>
+                                                         <li>Bitcoin will be sent from our hot storage address, not from the Bitcoin address you use to make a deposit.</li>
+                                                         <li>Coinvit is not responsible for the products, goods or services you buy using Bitcoin.</li>
+                                                         <li>Bitcoin transactions are final. This means that after successfully processing, the Bitcoin transaction cannot be canceled and cannot be refunded.</li>
+                                                      </ul>
+                                                   </div>
+                                                </div>
+                                                <!-- End row -->
+                                             </div>
+                                             <!-- End tab-pane -->
                                           </div>
                                           <!-- /.tab-content -->
                                        </div>
@@ -489,19 +573,19 @@
    <script type="text/javascript">
       $(document).ready(function () {
          $("#deposit-tabs").hide();
-
+      
          $("#btn-deposit").click(function(){
-
+      
             if ($("#deposit-tabs").hasClass("hide-deposit-tab")) {
                
                $("#deposit-tabs").show();
                $("#deposit-tabs").removeClass("hide-deposit-tab");
-
+      
             }else if (!$("#deposit-tabs").hasClass("hide-deposit-tab")) {
                $("#deposit-tabs").hide();
                $("#deposit-tabs").addClass("hide-deposit-tab");
             }
-
+      
          });
       });
    </script>
