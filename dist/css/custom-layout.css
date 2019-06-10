@@ -158,14 +158,6 @@
      font-size: 0.875em;
   }
 
-  .font-tablet-14{
-    font-size: 0.875em;
-  }
-
-  .tablet-padding{
-    padding: 0;
-  }
-
 }
 
 /* Tablet View 996 - 1024 pixels chat normai*/
@@ -265,6 +257,7 @@
   .description-block > .description-text {
      font-size: 0.875em;
   }
+
 }
 
 
@@ -273,9 +266,7 @@ body{
    overflow-x: scroll;
 }
 
-.margin-right-5{
-  margin-right: 5px;
-}
+
 /*Landing Page*/
   .name-asset{
     font-size: 40px;
@@ -681,4 +672,8 @@ h3{
 .menu-site-setting{
   font-size: 15px;
   margin-left: 10px;
+}
+
+.padding-top20{
+  padding-top: 20px;
 }

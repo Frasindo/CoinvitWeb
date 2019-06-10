@@ -18,8 +18,6 @@
       <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
       <!-- Theme style -->
       <link rel="stylesheet" href="dist/css/AdminLTE.css">
-      <!-- Fixed Column -->
-      <link rel="stylesheet" type="text/css" href="dist/css/column-fixed.css">
       <!-- Scrollbar Custom -->
       <link rel="stylesheet" type="text/css" href="dist/css/scrollbar-custom.css">
       <!-- Menu Asset Header -->
@@ -39,6 +37,52 @@
         width: 100%;
         height: 173px;
       }
+       :root {
+          --primary-color: #fff;
+          --secondary-color: #536390;
+          --font-color: #000;
+      }
+
+
+      [data-theme="dark"] {
+          --primary-color: #1c1f32;
+          --secondary-color: #272b41;
+          --font-color: #afb9ca;
+      }
+
+      .content-wrapper{
+         background-color: var(--primary-color);
+      }
+
+      .box{
+         background-color: var(--primary-color);
+         border-top: 3px solid var(--secondary-color);
+      }
+      .box-footer {
+          border-top: 1px solid var(--secondary-color);;
+          background-color: var(--primary-color);
+
+      }
+      .products-list > .item {
+         background-color: var(--primary-color);
+         border-top: 3px solid var(--secondary-color);
+      }
+      button{
+         background-color: var(--primary-color);
+      }
+
+      h6, h5, h4, h3, h2, h1{
+         color: var(--font-color);
+      }
+      p{
+         color: var(--font-color);
+      }
+      td{
+         color: var(--font-color);
+      }
+      span{
+         color: var(--font-color);
+      }
 
       </style>
    </head>
@@ -55,7 +99,7 @@
                <!-- <img src="dist/img/button/btn-hide-hover.png" data-toggle="push-menu" role="button" width="100px" height="35px" id="icon-setup" class="hide-btn"> -->
                <!-- <img src="dist/img/button/btn-show-hover.png" data-toggle="push-menu" role="button" width="100px" height="35px" id="icon-setup" class="hide-btn"> -->
 
-               <img src="dist/img/button/btn-hide.png" data-toggle="push-menu" role="button" width="100" height="35" id="icon-setup" class="hide-btn">  
+               <img src="dist/img/button/btn-hide.png" data-toggle="push-menu" role="button" width="100" height="30" id="icon-setup" class="hide-btn">  
 
                <!-- Navbar Right Menu -->
                <ul class="nav navbar-nav navbar-right custom-nav">
@@ -185,7 +229,7 @@
                   </li>
                   <li>
                      <a href="#">
-                     <i class="fa fa-moon-o"></i>    
+                     <i class="fa fa-moon-o" id="mode"></i>    
                      </a>
                   </li>
                   </li>
@@ -201,7 +245,7 @@
                   <li>
                      <!-- Image Hover -->
                      <!-- <img src="dist/img/button/btn-login-register-hover.png" width="130px" height="35px" type="button"  data-toggle="modal" data-target="#modal-lr"> -->
-                     <img src="dist/img/button/btn-login-register.png" width="130" height="35" type="button"  data-toggle="modal" data-target="#modal-lr">
+                     <img src="dist/img/button/btn-login-register.png" width="125" height="30" type="button"  data-toggle="modal" data-target="#modal-lr">
                   </li>
                </ul>
             </nav>
@@ -936,7 +980,7 @@
                                        <!-- End col-sm-6 -->
                                        <!-- col-sm-6 -->
                                        <div class="col-sm-6" style="padding: 15px 0px 0px 0px;">
-                                          <span style="float: left;" class="font-c-asset text-black">FRAS</span>
+                                          <span style="float: left;" class="font-c-asset">FRAS</span>
                                        </div>
                                        <!-- End col-sm-6 -->
                                        <div class="dropdown-content" id="content-base">
@@ -969,7 +1013,7 @@
                                        <!-- End col-sm-6 -->
                                        <!-- col-sm-6 -->
                                        <div class="col-sm-6" style="padding: 15px 0px 0px 0px;">
-                                          <span class="font-c-asset text-black" style="float: right;">FRAS</span>
+                                          <span class="font-c-asset" style="float: right;">FRAS</span>
                                        </div>
                                        <!-- End col-sm-6 -->
                                     <div class="dropdown-content" id="content-counter">
@@ -1306,7 +1350,7 @@
                                           </tr>
                                        </thead>
                                        <tbody>
-                                          <tr style="background: linear-gradient(to left, rgb(220, 246, 222) 94.1%, rgb(255, 255, 255) 94.1%);">
+                                          <tr id="buy-1">
                                              <td><i class="fa fa-angle-double-right text-green"></i></td>
                                              <td>1.1697</td>
                                              <td>1.1697</td>
@@ -1314,7 +1358,39 @@
                                              <td>0.00003326</td>
                                              <td class="text-green">BUY</td>
                                           </tr>
-                                          <tr style="background: linear-gradient(to left, rgb(220, 246, 222) 94.1%, rgb(255, 255, 255) 94.1%);">
+                                          <tr id="buy-2">
+                                             <td><i class="fa fa-angle-double-right text-green"></i></td>
+                                             <td>1.1697</td>
+                                             <td>1.1697</td>
+                                             <td>35252.525</td>
+                                             <td>0.00003326</td>
+                                             <td class="text-green">BUY</td>
+                                          </tr>
+                                          <tr id="buy-3">
+                                             <td><i class="fa fa-angle-double-right text-green"></i></td>
+                                             <td>1.1697</td>
+                                             <td>1.1697</td>
+                                             <td>35252.525</td>
+                                             <td>0.00003326</td>
+                                             <td class="text-green">BUY</td>
+                                          </tr>
+                                          <tr id="buy-4">
+                                             <td><i class="fa fa-angle-double-right text-green"></i></td>
+                                             <td>1.1697</td>
+                                             <td>1.1697</td>
+                                             <td>35252.525</td>
+                                             <td>0.00003326</td>
+                                             <td class="text-green">BUY</td>
+                                          </tr>
+                                          <tr id="buy-5">
+                                             <td><i class="fa fa-angle-double-right text-green"></i></td>
+                                             <td>1.1697</td>
+                                             <td>1.1697</td>
+                                             <td>35252.525</td>
+                                             <td>0.00003326</td>
+                                             <td class="text-green">BUY</td>
+                                          </tr>
+                                          <tr id="buy-6">
                                              <td><i class="fa fa-angle-double-right text-green"></i></td>
                                              <td>1.1697</td>
                                              <td>1.1697</td>
@@ -1340,7 +1416,7 @@
                                           </tr>
                                        </thead>
                                        <tbody>
-                                          <tr style="background: linear-gradient(to right, rgb(254, 214, 216) 89.7%, rgb(249, 249, 249) 89.7%);">
+                                          <tr id="sell-1">
                                              <td class="text-red">SELL</td>
                                              <td>0.00003396</td>
                                              <td>3949.866</td>
@@ -1348,7 +1424,7 @@
                                              <td>0.1341</td>
                                              <td></td>
                                           </tr>
-                                          <tr style="background: linear-gradient(to right, rgb(254, 214, 216) 89.7%, rgb(249, 249, 249) 89.7%);">
+                                          <tr id="sell-2">
                                              <td class="text-red">SELL</td>
                                              <td>0.00003396</td>
                                              <td>3949.866</td>
@@ -1356,7 +1432,7 @@
                                              <td>0.1341</td>
                                              <td><i class="fa fa-angle-double-left text-red"></i></td>
                                           </tr>
-                                          <tr style="background: linear-gradient(to right, rgb(254, 214, 216) 89.7%, rgb(249, 249, 249) 89.7%);">
+                                          <tr id="sell-3">
                                              <td class="text-red">SELL</td>
                                              <td>0.00003396</td>
                                              <td>3949.866</td>
@@ -1364,7 +1440,7 @@
                                              <td>0.1341</td>
                                              <td><i class="fa fa-angle-double-left text-red"></i></td>
                                           </tr>
-                                          <tr style="background: linear-gradient(to right, rgb(254, 214, 216) 89.7%, rgb(249, 249, 249) 89.7%);">
+                                          <tr id="sell-4">
                                              <td class="text-red">SELL</td>
                                              <td>0.00003396</td>
                                              <td>3949.866</td>
@@ -1372,7 +1448,7 @@
                                              <td>0.1341</td>
                                              <td></td>
                                           </tr>
-                                          <tr style="background: linear-gradient(to right, rgb(254, 214, 216) 89.7%, rgb(249, 249, 249) 89.7%);">
+                                          <tr id="sell-5">
                                              <td class="text-red">SELL</td>
                                              <td>0.00003396</td>
                                              <td>3949.866</td>
@@ -1380,7 +1456,7 @@
                                              <td>0.1341</td>
                                              <td></td>
                                           </tr>
-                                          <tr style="background: linear-gradient(to right, rgb(254, 214, 216) 89.7%, rgb(249, 249, 249) 89.7%);">
+                                          <tr id="sell-6">
                                              <td class="text-red">SELL</td>
                                              <td>0.00003396</td>
                                              <td>3949.866</td>
@@ -1388,7 +1464,7 @@
                                              <td>0.1341</td>
                                              <td></td>
                                           </tr>
-                                          <tr style="background: linear-gradient(to right, rgb(254, 214, 216) 89.7%, rgb(249, 249, 249) 89.7%);">
+                                          <tr id="sell-7">
                                              <td class="text-red">SELL</td>
                                              <td>0.00003396</td>
                                              <td>3949.866</td>
@@ -1396,7 +1472,7 @@
                                              <td>0.1341</td>
                                              <td></td>
                                           </tr>
-                                          <tr style="background: linear-gradient(to right, rgb(254, 214, 216) 89.7%, rgb(249, 249, 249) 89.7%);">
+                                          <tr id="sell-8">
                                              <td class="text-red">SELL</td>
                                              <td>0.00003396</td>
                                              <td>3949.866</td>
@@ -1404,7 +1480,7 @@
                                              <td>0.1341</td>
                                              <td></td>
                                           </tr>
-                                          <tr style="background: linear-gradient(to right, rgb(254, 214, 216) 89.7%, rgb(249, 249, 249) 89.7%);">
+                                          <tr id="sell-9">
                                              <td class="text-red">SELL</td>
                                              <td>0.00003396</td>
                                              <td>3949.866</td>
@@ -1412,7 +1488,7 @@
                                              <td>0.1341</td>
                                              <td></td>
                                           </tr>
-                                          <tr style="background: linear-gradient(to right, rgb(254, 214, 216) 89.7%, rgb(249, 249, 249) 89.7%);">
+                                          <tr id="sell-10">
                                              <td class="text-red">SELL</td>
                                              <td>0.00003396</td>
                                              <td>3949.866</td>
@@ -1420,71 +1496,7 @@
                                              <td>0.1341</td>
                                              <td></td>
                                           </tr>
-                                          <tr style="background: linear-gradient(to right, rgb(254, 214, 216) 89.7%, rgb(249, 249, 249) 89.7%);">
-                                             <td class="text-red">SELL</td>
-                                             <td>0.00003396</td>
-                                             <td>3949.866</td>
-                                             <td>0.1341</td>
-                                             <td>0.1341</td>
-                                             <td></td>
-                                          </tr>
-                                          <tr style="background: linear-gradient(to right, rgb(254, 214, 216) 89.7%, rgb(249, 249, 249) 89.7%);">
-                                             <td class="text-red">SELL</td>
-                                             <td>0.00003396</td>
-                                             <td>3949.866</td>
-                                             <td>0.1341</td>
-                                             <td>0.1341</td>
-                                             <td></td>
-                                          </tr>
-                                          <tr style="background: linear-gradient(to right, rgb(254, 214, 216) 89.7%, rgb(249, 249, 249) 89.7%);">
-                                             <td class="text-red">SELL</td>
-                                             <td>0.00003396</td>
-                                             <td>3949.866</td>
-                                             <td>0.1341</td>
-                                             <td>0.1341</td>
-                                             <td></td>
-                                          </tr>
-                                          <tr style="background: linear-gradient(to right, rgb(254, 214, 216) 89.7%, rgb(249, 249, 249) 89.7%);">
-                                             <td class="text-red">SELL</td>
-                                             <td>0.00003396</td>
-                                             <td>3949.866</td>
-                                             <td>0.1341</td>
-                                             <td>0.1341</td>
-                                             <td></td>
-                                          </tr>
-                                          <tr style="background: linear-gradient(to right, rgb(254, 214, 216) 89.7%, rgb(249, 249, 249) 89.7%);">
-                                             <td class="text-red">SELL</td>
-                                             <td>0.00003396</td>
-                                             <td>3949.866</td>
-                                             <td>0.1341</td>
-                                             <td>0.1341</td>
-                                             <td></td>
-                                          </tr>
-                                          <tr style="background: linear-gradient(to right, rgb(254, 214, 216) 89.7%, rgb(249, 249, 249) 89.7%);">
-                                             <td class="text-red">SELL</td>
-                                             <td>0.00003396</td>
-                                             <td>3949.866</td>
-                                             <td>0.1341</td>
-                                             <td>0.1341</td>
-                                             <td></td>
-                                          </tr>
-                                          <tr style="background: linear-gradient(to right, rgb(254, 214, 216) 89.7%, rgb(249, 249, 249) 89.7%);">
-                                             <td class="text-red">SELL</td>
-                                             <td>0.00003396</td>
-                                             <td>3949.866</td>
-                                             <td>0.1341</td>
-                                             <td>0.1341</td>
-                                             <td></td>
-                                          </tr>
-                                          <tr style="background: linear-gradient(to right, rgb(254, 214, 216) 89.7%, rgb(249, 249, 249) 89.7%);">
-                                             <td class="text-red">SELL</td>
-                                             <td>0.00003396</td>
-                                             <td>3949.866</td>
-                                             <td>0.1341</td>
-                                             <td>0.1341</td>
-                                             <td></td>
-                                          </tr>
-                                          <tr style="background: linear-gradient(to right, rgb(254, 214, 216) 89.7%, rgb(249, 249, 249) 89.7%);">
+                                          <tr id="sell-11">
                                              <td class="text-red">SELL</td>
                                              <td>0.00003396</td>
                                              <td>3949.866</td>
@@ -2281,6 +2293,32 @@
          <!-- /.Modal popup for choose blockchain network -->
       </div>
    </body>
+   <script type="text/javascript">
+      const currentTheme = localStorage.getItem('theme');
+
+       if (currentTheme === 'dark') {
+         var col2="#1c1f32";
+       }else if (currentTheme === 'light') {
+         var col2="#fff";
+       }
+      function coloringSell(sell, percentage){
+         var col1="#fbd9d9";
+         var tr=document.getElementById(sell);
+         tr.style.background = "-webkit-gradient(linear, left top,right top, color-stop("+percentage+"%,"+col1+"), color-stop("+percentage+"%,"+col2+"))";
+         tr.style.background = "-moz-linear-gradient(left center,"+col1+" "+percentage+"%, "+col2+" "+percentage+"%)";
+         tr.style.background = "-o-linear-gradient(left,"+col1+" "+percentage+"%, "+col2+" "+percentage+"%)";
+         tr.style.background = "linear-gradient(to right,"+col1+" "+percentage+"%, "+col2+" "+percentage+"%)";
+      }
+
+      function coloringBuy(buy, percentage){
+         var col1="#dcf6de";
+         var tr=document.getElementById(buy);
+         tr.style.background = "-webkit-gradient(linear, left top,right top, color-stop("+percentage+"%,"+col1+"), color-stop("+percentage+"%,"+col2+"))";
+         tr.style.background = "-moz-linear-gradient(left center,"+col1+" "+percentage+"%, "+col2+" "+percentage+"%)";
+         tr.style.background = "-o-linear-gradient(left,"+col1+" "+percentage+"%, "+col2+" "+percentage+"%)";
+         tr.style.background = "linear-gradient(to right,"+col1+" "+percentage+"%, "+col2+" "+percentage+"%)";
+      }
+   </script>
    <!-- jQuery 3 -->
    <script src="bower_components/jquery/dist/jquery.min.js"></script>
    <!-- Chat Function JS -->
@@ -2291,6 +2329,64 @@
             return false; 
       });
       $(document).ready(function () {
+         // id for tr sell , then value in percent
+         coloringSell("sell-1", 30);
+         coloringSell("sell-2", 50);
+         coloringSell("sell-3", 85);
+         coloringSell("sell-4", 30);
+         coloringSell("sell-5", 50);
+         coloringSell("sell-6", 85);
+         coloringSell("sell-7", 30);
+         coloringSell("sell-8", 50);
+         coloringSell("sell-9", 85);
+         coloringSell("sell-10", 85);
+         coloringSell("sell-11", 90);
+
+         // id for tr buy, then value in percent
+         coloringBuy("buy-1", 30);
+         coloringBuy("buy-2", 50);
+         coloringBuy("buy-3", 85);
+         coloringBuy("buy-4", 30);
+         coloringBuy("buy-5", 50);
+         coloringBuy("buy-6", 85);
+
+         // Mode Theme
+          const currentTheme = localStorage.getItem('theme');
+
+            if (currentTheme) {
+                document.documentElement.setAttribute('data-theme', currentTheme);
+              
+                if (currentTheme === 'dark') {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    $("#mode").removeClass("fa fa-moon-o");
+                    $("#mode").addClass("fa fa-sun-o");
+
+                     $('#mode').click(function() {
+                        location.reload();
+                        
+                        localStorage.setItem('theme', 'light');
+                        document.documentElement.setAttribute('data-theme', 'light');
+
+                     });
+                }else if (currentTheme === 'light') {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    $("#mode").removeClass("fa fa-sun-o");
+                    $("#mode").addClass("fa fa-moon-o");
+
+                     $('#mode').click(function() {
+                        location.reload();
+
+                        localStorage.setItem('theme', 'dark');
+                        document.documentElement.setAttribute('data-theme', 'dark');
+
+                     });
+                }
+            }
+
+            // End Mode Theme
+
+
+
          $(".drop-menu").click(function(){
             
             if($(".navbar-nav").hasClass("navbar-nav-open")){
